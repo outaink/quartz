@@ -1,0 +1,3 @@
+[submodule "content/CS-Notes"]
+	path = content/CS-Notes
+	url = git@github.com:outaink/Logseq-CS.git
