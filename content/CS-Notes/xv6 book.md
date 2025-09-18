@@ -12,7 +12,7 @@ rating: 🌟🌟🌟🌟🌟
   - 进程标识符`Process identifier` aka. `PID`
   - `fork()` 命令会创建子进程，对于父进程，`fork()` 的返回值是子进程的 `PID`。对于子进程返回值为`0`
   - **系统调用**:
-    - ![image.png](../assets/image_1757301839494_0.png){:height 483, :width 719}
+    - ![image.png](CS-Notes/assets/image_1757301839494_0.png){:height 483, :width 719}
 ## Chapter 2 系统调用
   - 操作系统的三个要求：多路、隔离、交互
   - Xv6 运行在一个**多核**的 RISC-V 处理器上，RISC-V 是一个 64 位 CPU，xv6 的 Long 和 指针是 64 位的， int 是 32 位的
@@ -25,7 +25,7 @@ rating: 🌟🌟🌟🌟🌟
       - 内核错误都是 fatal 致命的
     - **微内核**（micro kernel）： 一个微内核的职责范围有限，比如进程间通信，访问一些硬件。微服务等概念都是同一个思想
   - xv6 使用**页表**（硬件实现）让每个进程拥有专属的地址空间。RISC-V MMU内存管理器将**一个虚拟地址**映射到**物理地址**，简单来说，操作系统为每个进程创建一个页表，页表中包含了进程私有的堆栈和用户数据地址和内核数据地址（一般是一个向量）。由于虚拟内存硬件的存在，这些内容在进程视角中都是一致的，但是最终映射到不同的物理地址上
-  - ![image.png](../assets/image_1757433069706_0.png)
+  - ![image.png](CS-Notes/assets/image_1757433069706_0.png)
   - 上图可以看到，从虚拟地址0开始（从下往上）依次是用户数据（全局变量），栈，堆（最大）
   - [[MAXVA]] = Max Virtual Address = $$2^{38} - 1$$  = 0x3fffffffff
   - 一个xv6进程通过执行 RISC-V `ecall` 指令进行一个 system call -> 程序计数器指向一个内核定义的入口
@@ -38,10 +38,10 @@ rating: 🌟🌟🌟🌟🌟
 - 页表通过映射连接[[虚拟地址]]和[[物理地址]]
 - xv6 的虚拟地址长度为 39 bits（在 64 位机器上，剩余的 25 位不使用）
 - 一张页表逻辑上是一个存储 [[PTE]] 的数组，每个[[PTE]]包含一个 44 bit 长的物理页号 [[PPN]] 和一些标志位
-- ![image.png](../assets/image_1757630543860_0.png)
+- ![image.png](CS-Notes/assets/image_1757630543860_0.png)
   - 每个 PPN 对应的地址空间大小为 $$2^{12}$$，这个空间称为一个 Chunk
   - 实际的地址翻译是通过三级页表进行翻译的
-	  ![image.png](../assets/image_1757630819806_0.png)
+	  ![image.png](CS-Notes/assets/image_1757630819806_0.png)
   - 如果任何一个 [[PTE]] 在翻译过程中没有被找到，分页硬件会抛出一个[[缺页中断]]，操作系统会陷入内核态来处理这个中断
   - 为什么需要三级页表？
     - 如果只有一级页表，一个 39 位的虚拟地址的高 27 位会一一对应一个页表项，这样页表的大小是 $$2^{27}$$ = 128M
@@ -50,7 +50,7 @@ rating: 🌟🌟🌟🌟🌟
 ### 3.2 内核地址空间
 - xv6 为每个进行维护一个描述用户空间的页表和一个全局唯一的描述内核地址空间的页表
 - 内核页表记录了可访问的硬件资源和物理内存，`kernel/memlayout.h` 定义了 xv6 内核内存的分布
-- ![image.png](../assets/image_1757633895210_0.png)
+- ![image.png](CS-Notes/assets/image_1757633895210_0.png)
 - RAM 和 内存映射设备寄存器通过 [[直接映射]] 将资源映射到[[虚拟地址]]和[[物理地址]]相等的位置上
 - 例如：内核的起始地址在[[虚拟地址]]和[[物理地址]]上都为 `KERNBASE=0x80000000`
 [[直接映射]] 简化了内核代码读写[[物理内存]]
@@ -82,37 +82,37 @@ rating: 🌟🌟🌟🌟🌟
   - 功能：管道 IPC 会用到这个区域
   - 位置：位于内核空间，是内核同一管理的，不会分配给特定进程
 ### 3.5 物理内存分配器
-- 内存分配器代码 `kernel/kalloc.c`
-  ```c
-  struct run {
+内存分配器代码 `kernel/kalloc.c`
+```c
+struct run {
 	struct run *next;
-  };
+};
 
-  struct {
+struct {
 	struct spinlock lock;
 	struct run *freelist;
-  } kmem;
-  ```
-  分配器数据结构是一个空闲的可以被分配的物理内存页列别
-- 分配器初始化 `kinit`
-  ```c
-  void
-  kinit()
-  {
+} kmem;
+```
+分配器数据结构是一个空闲的可以被分配的物理内存页列表
+
+分配器初始化 `kinit`
+```c
+void
+kinit()
+{
 	initlock(&kmem.lock, "kmem");
 	freerange(end, (void*)PHYSTOP);
-  }
-	  ```
- ```c
-	  void
-	  freerange(void *pa_start, void *pa_end)
-	  {
-		char *p;
-		p = (char*)PGROUNDUP((uint64)pa_start);
-		for(; p + PGSIZE <= (char*)pa_end; p += PGSIZE)
-		  kfree(p);
-	  }
-	  ```
+}
+
+void
+freerange(void *pa_start, void *pa_end)
+{
+	char *p;
+	p = (char*)PGROUNDUP((uint64)pa_start);
+	for(; p + PGSIZE <= (char*)pa_end; p += PGSIZE)
+	  kfree(p);
+}
+```
 ### 3.6 进程地址空间
 - 每个进程都有独立的页表，进程切换页表也会切换
 - 进程的用户内存从 0 到 [[MAXVA]]
@@ -140,10 +140,10 @@ rating: 🌟🌟🌟🌟🌟
 - 用户空间时来了一个设备中断
 
 观察下面内核空间和用户空间的地址分布
-![image.png](../assets/image_1757633895210_0.png)
+![image.png](CS-Notes/assets/image_1757633895210_0.png)
 
 它们的分布情况很不同，除了 [[Trampoline]] 页
-![image.png](../assets/image_1757433069706_0.png)
+![image.png](CS-Notes/assets/image_1757433069706_0.png)
 这样就可以看出，[[Trampoline]] 页是用户态进入内核态的关键
 `trapframe` 是保存用户态寄存器信息的数据结构
 
