@@ -1,0 +1,10 @@
+- Page table entry
+- 每个 PTE 占用的地址为 $$2^{27}$$
+- ![image.png](../assets/image_1757631759133_0.png)
+- **标志位 Flags**
+  - `PTE_V` -> 这个 PTE 是否存在，如果不存在将发生[[缺页中断]]
+  - `PTE_R` -> 指令是否可以读取这个 PTE 对应的内存页
+  - `PTE_W` -> 指令是否可以向这个内存页写入数据
+  - `PTE_x` -> CPU 是否会解释内存页内容并执行
+  - `PTE_U` -> user mode 下是否可以访问该内存页，如果为 0，只能在 supervisor mode 访问
+  - 其他标志都是和硬件相关的，可以在 `kernel/riscv.h` 中查看

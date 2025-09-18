@@ -1,0 +1,14 @@
+- Android 中有两个 Handler，分别是 HandlerA和 HandlerB，如果在A中post一个延时任务，在 HandlerB 中 remove 这个任务，会发生什么？（字节）
+- **结论**：无法 remove
+- 因为 Message 被创建的时候会指定 Hanlder target 成员，保证了一个 Message 只能被特定的 Handler 操作
+- 
+- Handler 如何保证延时任务的正确执行
+- 设置 Message 对象的 when 参数：使用 delayMillis + SystemClock.uptimeMillis() （设备自启动后经过的毫秒数，不受系统时间改变影响，是单调递增的）获得一个 when 的时间戳
+- 如何 Message 带有 when 字段，`enqueueMessage` 方法**不会**简单地将消息添加到队尾，而是遍历队列，插到合适的位置
+- **情况 A: 消息已到期:** 如果队首消息的 `when` 时间戳小于或等于当前的 `SystemClock.uptimeMillis()`，说明这条消息已经到期或过期，`next()` 将其从队列中移除并返回给 `Looper`。
+- **情况 B: 消息未到期:** 如果队首消息的 `when` 时间戳大于当前的 `SystemClock.uptimeMillis()`，说明最早的消息也还没到执行时间。此时：`next()` 计算出需要等待的时间 `delay = headMessage.when - SystemClock.uptimeMillis()`。
+- 它调用底层的 `nativePollOnce(ptr, delay)` 方法。这个 native 方法会使当前线程**阻塞**，但**不是无限期阻塞**，而是最多阻塞 `delay` 毫秒。它利用了操作系统的机制（如 Linux 的 `epoll_wait`）来实现高效的定时等待。
+- 如果在阻塞期间，有新的、更早到期的消息被插入到队首（通过 `enqueueMessage`），或者阻塞时间到达 `delay` 毫秒，`nativePollOnce` 就会被唤醒，`next()` 方法继续执行，重新检查队首消息。
+- 
+- Hanlder 如何维护消息的顺序？
+- 因为是链表，只能从头节点开始遍历并插入

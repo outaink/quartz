@@ -1,6 +1,0 @@
-[submodule "content/CS-Notes"]
-	path = content/CS-Notes
-	url = git@github.com:outaink/Logseq-CS.git
-[submodule "content/Android-Notes"]
-	path = content/Android-Notes
-	url = git@github.com:outaink/Logseq-Android.git

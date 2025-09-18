@@ -1,0 +1,8 @@
+- Object 类是所有对象的公共类
+  - getClass()
+  - equals()
+  - hashcode()
+  - toString()
+  - wait()
+  - notify()
+  - notifyAll()

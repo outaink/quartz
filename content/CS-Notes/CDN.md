@@ -1,0 +1,2 @@
+- 全称：Content Delivery Nework 内容分发网络
+- 简介：静态内容分发，防止 DDos 攻击，加速器的实现都可以使用 CDN

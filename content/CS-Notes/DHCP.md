@@ -1,0 +1,27 @@
+- 全称：Dynamic Host Configuration Protocol
+- 前提：主机选择 `自动获取 IP 地址`
+- 简介：主机向 DHCP 服务器请求，DHCP 服务器返回分配给该主机的 IP 地址、子网掩码、网关地址和DNS
+- 
+- 家用的[[Router]]一般就是最常见的 DHCP 服务器
+- 
+## 概念
+- 租期：动态分配的 IP 地址有使用期限
+- 
+- 
+## 流程
+  - ### 1. DHCP Discover
+    - 子网中接入一台新设备，并设置自动获取 IP 地址，这就需要找到 DHCP 服务器
+    - ![image.png](../assets/image_1758140639248_0.png)
+    - DHCP 是应用层协议
+    - 传输层使用 [[UDP]] 协议，并且占用固定端口
+    - 网络层使用 IP 广播地址
+    - 数据链路层使用 MAC 广播地址
+  - ### 2. DHCP Offer
+    - DHCP 服务器响应，返回 IP 地址、网关地址、DNS 地址、子网掩码
+    - ![image.png](../assets/image_1758140972024_0.png)
+    - 问题：如果子网中有多个 DHCP 服务器怎么办？
+  - ### 3. DHCP Request
+    - 继续广播，告诉所有的 DHCP 服务器选择哪个 IP 地址，一般会选择最先收到的 DHCP Offer 中携带的 IP 地址
+  - ### 4. DHCP ACK
+    - 被选择的 DHCP 服务器发送确认
+  - DHCP 牵手成功

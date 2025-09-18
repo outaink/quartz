@@ -1,0 +1,5 @@
+- 缺点
+  - 队头阻塞：TCP 字节流
+  - TCP 与 TSL 的握手时延迟：TCP三次握手 TSL 四次握手，3次RTT
+  - 网络迁移需要重新连接
+    - 一个 TCP 连接由 srcIP、srcPort、tgIP、tgPort 确定，若 IP 地址或端口发生变化，就要重新进行连接，所以 [[HTTP3.0]] 使用了UDP

@@ -1,0 +1,3 @@
+[[Activity]]
+[[Service]]
+[[ContentProvider]]
