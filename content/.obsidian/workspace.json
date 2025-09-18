@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Android-Notes/全局监听 Activity 的销毁.md",
+                "file": "Android-Notes/Activity.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "全局监听 Activity 的销毁"
+              "title": "Activity"
             }
           }
         ]
@@ -170,20 +170,27 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "command-palette:Open command palette": false
     }
   },
   "active": "a483e7d887532349",
   "lastOpenFiles": [
+    "Android-Notes/架构模式.md",
+    "Android-Notes/布局过程解析.md",
+    "CS-Notes/HTTP2.0.md",
+    "CS-Notes/HTTP3.0.md",
+    "QUIC.md",
+    "index.md",
+    "2025-09-18.md",
+    "Android-Notes/全局监听 Activity 的销毁.md",
     "Android-Notes/计算机网络.md",
     "Android-Notes/抽象类和接口.md",
-    "Android-Notes/布局过程解析.md",
     "CS-Notes/DHCP.md",
     "CS-Notes/CS基础.md",
     "CS-Notes/CS.md",
@@ -200,13 +207,6 @@
     "CS-Notes/树.md",
     "CS-Notes/实验：观察MacOS上的动态链接和静态链接.md",
     "CS-Notes/缺页中断.md",
-    "CS-Notes/进程与线程.md",
-    "CS-Notes/计算机网络体系结构.md",
-    "CS-Notes/红黑树.md",
-    "CS-Notes/读写锁.md",
-    "CS-Notes/动态链接、静态链接.md",
-    "CS-Notes/操作系统.md",
-    "CS-Notes/hls__book-riscv-rev1_1757300923075_0.md",
     "nul",
     "CS-Notes/assets/Pasted image 20250918003841.png",
     "CS-Notes/assets/Pasted image 20250918003829.png",
