@@ -4,6 +4,24 @@
     "type": "split",
     "children": [
       {
+        "id": "9e906db9cb0f0122",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5390e18f06cfdd61",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "CS-Notes/assets/book-riscv-rev1_1757300923075_0.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "book-riscv-rev1_1757300923075_0"
+            }
+          }
+        ]
+      },
+      {
         "id": "5e770b72e7b1100e",
         "type": "tabs",
         "children": [
@@ -13,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Android-Notes/Activity.md",
+                "file": "CS-Notes/xv6 book.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +46,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Activity"
+              "title": "xv6 book"
+            }
+          },
+          {
+            "id": "3d1155067809b911",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -88,7 +130,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "869cb833b3f88451",
@@ -104,8 +147,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Logseq-Android/pages/布局过程解析.md",
-                "collapseAll": false,
+                "file": "CS-Notes/xv6 book.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -114,7 +157,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 布局过程解析"
+              "title": "Backlinks for xv6 book"
             }
           },
           {
@@ -123,12 +166,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Logseq-Android/pages/布局过程解析.md",
+                "file": "CS-Notes/xv6 book.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 布局过程解析"
+              "title": "Outgoing links from xv6 book"
             }
           },
           {
@@ -152,16 +195,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Logseq-Android/pages/Java.md",
+                "file": "CS-Notes/xv6 book.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Java"
+              "title": "Outline of xv6 book"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -170,27 +214,33 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
     }
   },
   "active": "a483e7d887532349",
   "lastOpenFiles": [
-    "Android-Notes/架构模式.md",
-    "Android-Notes/布局过程解析.md",
-    "CS-Notes/HTTP2.0.md",
-    "CS-Notes/HTTP3.0.md",
-    "QUIC.md",
+    "CS-Notes/assets/book-riscv-rev1_1757300923075_0.pdf",
+    "CS-Notes/xv6 book.md",
+    "Russ Cox]]、[[Frans Kaashoek]]、[[Robert Morris.md",
     "index.md",
-    "2025-09-18.md",
+    "CS-Notes/QUIC.md",
+    "CS-Notes/静态连接和动态连接.md",
+    "CS-Notes/动态链接、静态链接.md",
+    "CS-Notes/实验：观察MacOS上的动态链接和静态链接.md",
+    "CS-Notes/操作系统.md",
+    "CS-Notes/虚拟地址、逻辑地址、线性地址、物理地址的区别.md",
+    "CS-Notes/IPC通信方式.md",
     "Android-Notes/全局监听 Activity 的销毁.md",
+    "2025-09-18.md",
     "Android-Notes/计算机网络.md",
     "Android-Notes/抽象类和接口.md",
+    "Android-Notes/布局过程解析.md",
     "CS-Notes/DHCP.md",
     "CS-Notes/CS基础.md",
     "CS-Notes/CS.md",
@@ -198,15 +248,9 @@
     "CS-Notes/Atomic原子类.md",
     "CS-Notes/状态码.md",
     "CS-Notes/虚拟内存.md",
-    "CS-Notes/虚拟地址、逻辑地址、线性地址、物理地址的区别.md",
     "CS-Notes/物理内存.md",
     "CS-Notes/索引.md",
     "CS-Notes/死锁的必要条件和处理方式.md",
-    "CS-Notes/数据库.md",
-    "CS-Notes/数据结构.md",
-    "CS-Notes/树.md",
-    "CS-Notes/实验：观察MacOS上的动态链接和静态链接.md",
-    "CS-Notes/缺页中断.md",
     "nul",
     "CS-Notes/assets/Pasted image 20250918003841.png",
     "CS-Notes/assets/Pasted image 20250918003829.png",
@@ -218,7 +262,6 @@
     "CS-Notes/assets/image_1757630819806_0.png",
     "CS-Notes/assets/image_1757630543860_0.png",
     "CS-Notes/assets/image_1757433069706_0.png",
-    "CS-Notes/assets/book-riscv-rev1_1757300923075_0.pdf",
     "CS-Notes/assets/book-riscv-rev1_1757300923075_0.edn",
     "CS-Notes/assets",
     "CS-Notes",

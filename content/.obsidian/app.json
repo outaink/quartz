@@ -1,4 +1,7 @@
 {
   "newLinkFormat": "absolute",
-  "attachmentFolderPath": "./assets"
+  "attachmentFolderPath": "./assets",
+  "spellcheck": false,
+  "promptDelete": false,
+  "alwaysUpdateLinks": true
 }
