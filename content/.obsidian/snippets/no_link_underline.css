@@ -1,0 +1,4 @@
+/* 预览模式 */
+.markdown-source-view.mod-cm6 .cm-underline { text-decoration: none; }
+/* 阅读模式 */
+.markdown-rendered .internal-link { text-decoration: none !important; }
