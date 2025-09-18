@@ -14,6 +14,7 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
+
 # 配置
 SERVER="root@outaink.com"
 REMOTE_DIR="/var/www/outaink-quartz-dg"
