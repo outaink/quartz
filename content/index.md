@@ -22,7 +22,7 @@ description: Android 开发者 & 计算机科学学习者的知识库
 深入探索 Android 生态系统，从基础组件到高级架构模式：
 - [Activity 生命周期详解](Android-Notes/Activity.md)
 - [Handler 机制深度剖析](Android-Notes/Handler机制.md)
-- [Jetpack Compose 性能优化](Android-Notes/Compose%20重组的性能风险和优化.md)
+- [Jetpack Compose 性能优化](Android-Notes/Compose-重组的性能风险和优化.md)
 - [View 绘制流程解析](Android-Notes/布局过程解析.md)
 
 ### 💻 计算机科学基础
@@ -30,7 +30,7 @@ description: Android 开发者 & 计算机科学学习者的知识库
 - [操作系统核心概念](CS-Notes/操作系统.md)
 - [网络协议栈详解](CS-Notes/计算机网络.md)
 - [数据结构与算法](CS-Notes/数据结构.md)
-- [MIT 6.S081 实验记录](CS-Notes/MIT%206.s081.md)
+- [MIT 6.S081 实验记录](CS-Notes/MIT-6.s081.md)
 
 ## 🛠️ 项目与实践
 
