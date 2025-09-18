@@ -1,0 +1,231 @@
+{
+  "main": {
+    "id": "5ed686da7adf89f7",
+    "type": "split",
+    "children": [
+      {
+        "id": "5e770b72e7b1100e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a483e7d887532349",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Android-Notes/全局监听 Activity 的销毁.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "全局监听 Activity 的销毁"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "db8cbb6e4205950b",
+    "type": "split",
+    "children": [
+      {
+        "id": "c8e3de9d86f3f54e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec6f46c378e1c16a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "06aa4c98ecd5ee31",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2cdf35fb0ebb03a5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "869cb833b3f88451",
+    "type": "split",
+    "children": [
+      {
+        "id": "013a27890651758c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "40a2396a921745d0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Logseq-Android/pages/布局过程解析.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 布局过程解析"
+            }
+          },
+          {
+            "id": "ead444c0c27c078e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Logseq-Android/pages/布局过程解析.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 布局过程解析"
+            }
+          },
+          {
+            "id": "26f37f99145e3772",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b244adaaaa200954",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Logseq-Android/pages/Java.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Java"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "a483e7d887532349",
+  "lastOpenFiles": [
+    "Android-Notes/计算机网络.md",
+    "Android-Notes/抽象类和接口.md",
+    "Android-Notes/布局过程解析.md",
+    "CS-Notes/DHCP.md",
+    "CS-Notes/CS基础.md",
+    "CS-Notes/CS.md",
+    "CS-Notes/CDN.md",
+    "CS-Notes/Atomic原子类.md",
+    "CS-Notes/状态码.md",
+    "CS-Notes/虚拟内存.md",
+    "CS-Notes/虚拟地址、逻辑地址、线性地址、物理地址的区别.md",
+    "CS-Notes/物理内存.md",
+    "CS-Notes/索引.md",
+    "CS-Notes/死锁的必要条件和处理方式.md",
+    "CS-Notes/数据库.md",
+    "CS-Notes/数据结构.md",
+    "CS-Notes/树.md",
+    "CS-Notes/实验：观察MacOS上的动态链接和静态链接.md",
+    "CS-Notes/缺页中断.md",
+    "CS-Notes/进程与线程.md",
+    "CS-Notes/计算机网络体系结构.md",
+    "CS-Notes/红黑树.md",
+    "CS-Notes/读写锁.md",
+    "CS-Notes/动态链接、静态链接.md",
+    "CS-Notes/操作系统.md",
+    "CS-Notes/hls__book-riscv-rev1_1757300923075_0.md",
+    "nul",
+    "CS-Notes/assets/Pasted image 20250918003841.png",
+    "CS-Notes/assets/Pasted image 20250918003829.png",
+    "CS-Notes/assets/Pasted image 20250918003741.png",
+    "CS-Notes/assets/image_1758140972024_0.png",
+    "CS-Notes/assets/image_1758140639248_0.png",
+    "CS-Notes/assets/image_1757633895210_0.png",
+    "CS-Notes/assets/image_1757631759133_0.png",
+    "CS-Notes/assets/image_1757630819806_0.png",
+    "CS-Notes/assets/image_1757630543860_0.png",
+    "CS-Notes/assets/image_1757433069706_0.png",
+    "CS-Notes/assets/book-riscv-rev1_1757300923075_0.pdf",
+    "CS-Notes/assets/book-riscv-rev1_1757300923075_0.edn",
+    "CS-Notes/assets",
+    "CS-Notes",
+    "Android-Notes",
+    "convert_logseq_to_obsidian.py",
+    "assets/book-riscv-rev1_1757300923075_0.pdf",
+    "assets/book-riscv-rev1_1757300923075_0.edn",
+    "assets"
+  ]
+}
