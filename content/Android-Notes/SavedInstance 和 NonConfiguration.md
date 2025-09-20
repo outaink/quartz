@@ -38,19 +38,18 @@
 
   **总结对比**
 
-  | **特性** | **保存实例状态 (Saved Instance State)** | **NonConfiguration 实例 (ViewModel)** |
-  | **主要目的** | 保存轻量级 UI 状态 | 保留在内存中的复杂对象/数据 |
-  | **跨配置更改** | ✅ 保存 | ✅ 保存 |
-  | **跨进程终止恢复** | ✅ 保存 | ❌ **丢失** |
-  | **数据形式/存储** | `Bundle` (键值对) | 任意对象实例 (内存中) |
-  | **数据类型限制** | Bundle 支持的类型 | 任何类型 |
-  | **数据大小限制** | 小 (KB 级别，硬限制 ~1MB) | 受限于可用内存 |
-  | **生命周期管理** | 手动 (onSave/onCreate) 或 `rememberSaveable` | 自动 (由 ViewModel 框架管理) |
-  | **现代推荐实现** | `SavedStateHandle` / `rememberSaveable` | `ViewModel` (AAC) |
-  | **典型用途** | 用户输入、滚动位置、简单 UI 状态标识符 | 网络/数据库数据、后台任务管理、业务逻辑 |
+| **特性** | **保存实例状态 (Saved Instance State)** | **NonConfiguration 实例 (ViewModel)** |
+| **主要目的** | 保存轻量级 UI 状态 | 保留在内存中的复杂对象/数据 | 
+| **跨配置更改** | ✅ 保存 | ✅ 保存 |
+| **跨进程终止恢复** | ✅ 保存 | ❌ **丢失** |
+| **数据形式/存储** | `Bundle` (键值对) | 任意对象实例 (内存中) |
+| **数据类型限制** | Bundle 支持的类型 | 任何类型 |
+| **数据大小限制** | 小 (KB 级别，硬限制 ~1MB) | 受限于可用内存 |
+| **生命周期管理** | 手动 (onSave/onCreate) 或 `rememberSaveable` | 自动 (由 ViewModel 框架管理) |
+| **现代推荐实现** | `SavedStateHandle` / `rememberSaveable` | `ViewModel` (AAC) |
+| **典型用途** | 用户输入、滚动位置、简单 UI 状态标识符 | 网络/数据库数据、后台任务管理、业务逻辑 |
 
-  **如何协同工作:**
-
+**如何协同工作:**
   这两种机制通常一起使用以提供健壮的用户体验：
 - **`ViewModel`** 用于持有和管理核心数据（如从网络或数据库加载的用户列表）。它确保在屏幕旋转时数据不会丢失，避免了重新加载。
 - **Saved Instance State** (通常通过 `ViewModel` 中的 `SavedStateHandle` 或 Compose 中的 `rememberSaveable`) 用于保存那些需要跨进程终止恢复的关键标识符（例如当前用户的 ID、搜索查询词）或轻量级的 UI 状态（如 `TextField` 的内容）。当进程被终止并恢复后，`ViewModel` 会被重新创建，此时它可以从 `SavedStateHandle` 中读取这些关键标识符，用它们来重新加载所需的核心数据，并将 UI 恢复到接近之前的状态。

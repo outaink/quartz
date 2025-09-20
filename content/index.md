@@ -30,7 +30,7 @@ description: Android 开发者 & 计算机科学学习者的知识库
 - [操作系统核心概念](CS-Notes/操作系统.md)
 - [网络协议栈详解](CS-Notes/计算机网络.md)
 - [数据结构与算法](CS-Notes/数据结构.md)
-- [MIT 6.S081 实验记录](CS-Notes/MIT-6.s081.md)
+- [[CS-Notes/MIT 6.s081|MIT 6.s081]] 🚧最近努力施工ing
 
 ## 🛠️ 项目与实践
 

@@ -26,7 +26,7 @@
 	  ```
 - 
 ### 实验笔记
-[[xv6 book]]
+[[CS-Notes/xv6 book 阅读笔记]]
 - {{embed ((68c3424b-2a2a-4e9f-b4ea-ab13675a5098))}}
 - 核心代码：
   ```css
