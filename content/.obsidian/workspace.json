@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Android-Notes/Java 类加载过程实验.md",
+                "file": "Career/实习经历.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,35 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Java 类加载过程实验"
-            }
-          },
-          {
-            "id": "72d8fd8d21ccd9f4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Android-Notes/Activity.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Activity"
+              "title": "实习经历"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -88,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "启动",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,8 +84,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -178,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Android-Notes/Activity.md",
+                "file": "CS-Notes/Lab4 中断处理 Traps.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Activity"
+              "title": "Outline of Lab4 中断处理 Traps"
             }
           }
         ],
@@ -192,7 +166,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -205,53 +180,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "72d8fd8d21ccd9f4",
+  "active": "ec6f46c378e1c16a",
   "lastOpenFiles": [
-    "Android-Notes/Handler机制.md",
-    "Android-Notes/Activity.md",
-    "Android-Notes/Service.md",
-    "Java 类加载器.md",
-    "Android-Notes/Java 类加载过程实验.md",
-    "Android-Notes/Java 反射机制.md",
-    "Android-Notes/Object类.md",
-    "Android-Notes/Java.md",
-    "Android-Notes/LeakCanary原理.md",
-    "Android-Notes/SavedInstance 和 NonConfiguration.md",
-    "CS-Notes/死锁的必要条件和处理方式.md",
-    "CS-Notes/操作系统.md",
-    "Android-Notes/LiveData.md",
-    "Android-Notes/Android.md",
-    "Android-Notes/MVI.md",
-    "Android-Notes/架构模式.md",
-    "Android-Notes/全局监听 Activity 的销毁.md",
-    "Android-Notes/抽象类和接口.md",
-    "Android-Notes/责任链模式.md",
-    "Android-Notes/Android触摸事件分发机制.md",
-    "Android-Notes/HashMap、HashTable、ConcurrentHashMap有什么相同和不同.md",
-    "Android-Notes/布局过程解析.md",
-    "CS-Notes/Lab4 中断处理 Traps.md",
-    "CS-Notes/MIT 6.s081.md",
-    "CS-Notes/Lab3 页表.md",
-    "CS-Notes/Lab2 系统调用.md",
-    "CS-Notes/assets/book-riscv-rev1_1757300923075_0.pdf",
-    "nul",
-    "CS-Notes/assets/Pasted image 20250918003841.png",
-    "CS-Notes/assets/Pasted image 20250918003829.png",
-    "CS-Notes/assets/Pasted image 20250918003741.png",
-    "CS-Notes/assets/image_1758140972024_0.png",
-    "CS-Notes/assets/image_1758140639248_0.png",
-    "CS-Notes/assets/image_1757633895210_0.png",
-    "CS-Notes/assets/image_1757631759133_0.png",
-    "CS-Notes/assets/image_1757630819806_0.png",
-    "CS-Notes/assets/image_1757630543860_0.png",
-    "CS-Notes/assets/image_1757433069706_0.png",
-    "CS-Notes/assets/book-riscv-rev1_1757300923075_0.edn",
-    "CS-Notes/assets",
-    "CS-Notes",
-    "Android-Notes",
-    "convert_logseq_to_obsidian.py",
-    "assets/book-riscv-rev1_1757300923075_0.pdf",
-    "assets/book-riscv-rev1_1757300923075_0.edn",
-    "assets"
+    "System-Fundamentals/index.md",
+    "Courses/MIT-6.S081/时钟中断.md",
+    "Java-Core/Concurrency/JUC.md",
+    "CS-Notes/Java.md",
+    "migration-report.md",
+    "内容重组织方案.md",
+    "Courses/index.md",
+    "Data-Structures/index.md",
+    "Network/index.md",
+    "Java-Core/index.md",
+    "Android-Dev/index.md",
+    "Blog/静态连接和动态连接.md",
+    "Blog/计算机网络.md",
+    "Blog/数据结构.md",
+    "Blog/hls__book-riscv-rev1_1757300923075_0.md",
+    "Blog/MIT.md",
+    "Blog/MIT-6.s081.md",
+    "Blog/HTTP.md",
+    "Blog/CS基础.md",
+    "Blog/CS.md",
+    "Blog/Java.md",
+    "Blog/Android.md",
+    "System-Fundamentals/assets/Pasted image 20250921042643.png",
+    "System-Fundamentals/assets/Pasted image 20250918003841.png",
+    "System-Fundamentals/assets/Pasted image 20250918003829.png",
+    "System-Fundamentals/assets/Pasted image 20250918003741.png",
+    "System-Fundamentals/assets/image_1758140972024_0.png",
+    "System-Fundamentals/assets/image_1758140639248_0.png",
+    "System-Fundamentals/assets/image_1757633895210_0.png",
+    "System-Fundamentals/assets/image_1757631759133_0.png",
+    "System-Fundamentals/assets/image_1757630543860_0.png",
+    "System-Fundamentals/assets/image_1757433069706_0.png",
+    "System-Fundamentals/assets/book-riscv-rev1_1757300923075_0.pdf",
+    "System-Fundamentals/assets/book-riscv-rev1_1757300923075_0.edn",
+    "System-Fundamentals/assets",
+    "Android-Dev/assets",
+    "Courses/CPP-Basics/String.md",
+    "Courses/CPP-Basics/Smart Pointers.md",
+    "Courses/CPP-Basics/Pointers & Constants.md",
+    "Courses/CPP-Basics/C++.md",
+    "Blog",
+    "Career",
+    "Courses/CPP-Basics",
+    "Courses/MIT-6.S081",
+    "Courses",
+    "Data-Structures/Trees"
   ]
 }
