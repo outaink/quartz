@@ -13,7 +13,7 @@ export const SubmoduleDateFix: QuartzTransformerPlugin<Partial<Options>> = (user
   const opts = { ...defaultOptions, ...userOpts }
   return {
     name: "SubmoduleDateFix",
-    markdownPlugins(ctx) {
+    markdownPlugins() {
       return [
         () => {
           return async (_tree, file) => {
@@ -24,7 +24,9 @@ export const SubmoduleDateFix: QuartzTransformerPlugin<Partial<Options>> = (user
 
             if (isSubmoduleFile) {
               if (!file.data.frontmatter) {
-                file.data.frontmatter = {}
+                file.data.frontmatter = {
+                  title: ""
+                }
               }
 
               const fullFp = file.data.filePath!
@@ -34,16 +36,18 @@ export const SubmoduleDateFix: QuartzTransformerPlugin<Partial<Options>> = (user
               const isEpochDate = (date: Date) => date.getTime() === 0 || date.getFullYear() === 1970
               const currentDate = new Date().toISOString()
 
-              if (!file.data.frontmatter.created || file.data.frontmatter.created === "0") {
-                file.data.frontmatter.created = isEpochDate(st.birthtime) ? currentDate : st.birthtime.toISOString()
-              }
+              if (file.data.frontmatter) {
+                if (!file.data.frontmatter.created || file.data.frontmatter.created === "0") {
+                  file.data.frontmatter.created = isEpochDate(st.birthtime) ? currentDate : st.birthtime.toISOString()
+                }
 
-              if (!file.data.frontmatter.modified || file.data.frontmatter.modified === "0") {
-                file.data.frontmatter.modified = isEpochDate(st.mtime) ? currentDate : st.mtime.toISOString()
-              }
+                if (!file.data.frontmatter.modified || file.data.frontmatter.modified === "0") {
+                  file.data.frontmatter.modified = isEpochDate(st.mtime) ? currentDate : st.mtime.toISOString()
+                }
 
-              if (!file.data.frontmatter.date || file.data.frontmatter.date === "0") {
-                file.data.frontmatter.date = isEpochDate(st.mtime) ? currentDate : st.mtime.toISOString()
+                if (!file.data.frontmatter.date || file.data.frontmatter.date === "0") {
+                  file.data.frontmatter.date = isEpochDate(st.mtime) ? currentDate : st.mtime.toISOString()
+                }
               }
             }
           }
