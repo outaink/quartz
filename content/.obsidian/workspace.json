@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index-new.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "index-new"
+              "title": "index"
             }
           }
         ]
@@ -182,10 +182,10 @@
   },
   "active": "a483e7d887532349",
   "lastOpenFiles": [
-    "index.xml.md",
-    "index-new.md",
+    "Courses/CPP-Basics.md",
     "index.md",
     "内容重组织方案.md",
+    "index.xml.md",
     "migration-report.md",
     "Career/实习经历.md",
     "System-Fundamentals/index.md",

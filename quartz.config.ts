@@ -57,7 +57,7 @@ const config: QuartzConfig = {
     transformers: [
       Plugin.FrontMatter(),
       Plugin.SubmoduleDateFix({
-        submodulePaths: ["Android-Notes", "CS-Notes"]
+        submodulePaths: ["Android-Dev", "Android-Notes", "CS-Notes", "System-Fundamentals", "Blog", "Career", "Courses", "Data-Structures", "Java-Core", "Network"]
       }),
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "filesystem", "git"],
