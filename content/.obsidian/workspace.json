@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Career/实习经历.md",
+                "file": "index-new.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "实习经历"
+              "title": "index-new"
             }
           }
         ]
@@ -180,14 +180,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "ec6f46c378e1c16a",
+  "active": "a483e7d887532349",
   "lastOpenFiles": [
+    "index.xml.md",
+    "index-new.md",
+    "index.md",
+    "内容重组织方案.md",
+    "migration-report.md",
+    "Career/实习经历.md",
     "System-Fundamentals/index.md",
     "Courses/MIT-6.S081/时钟中断.md",
     "Java-Core/Concurrency/JUC.md",
     "CS-Notes/Java.md",
-    "migration-report.md",
-    "内容重组织方案.md",
     "Courses/index.md",
     "Data-Structures/index.md",
     "Network/index.md",
@@ -218,10 +222,6 @@
     "System-Fundamentals/assets/book-riscv-rev1_1757300923075_0.edn",
     "System-Fundamentals/assets",
     "Android-Dev/assets",
-    "Courses/CPP-Basics/String.md",
-    "Courses/CPP-Basics/Smart Pointers.md",
-    "Courses/CPP-Basics/Pointers & Constants.md",
-    "Courses/CPP-Basics/C++.md",
     "Blog",
     "Career",
     "Courses/CPP-Basics",
