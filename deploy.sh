@@ -194,9 +194,9 @@ echo ""
 
 # 测试 URL 列表
 test_urls=(
-    "http://outaink.com/"
-    "http://outaink.com/Android-Notes/Activity"
-    "http://outaink.com/CS-Notes/MIT-6.s081"
+    "https://outaink.com/"
+    "https://outaink.com/Android-Notes/Activity"
+    "https://outaink.com/CS-Notes/MIT-6.s081"
 )
 
 all_success=true
