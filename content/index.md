@@ -24,14 +24,14 @@ description: Android 开发者 & 计算机科学学习者的知识库
 **精选内容**：
 - [Activity 生命周期详解](Android-Dev/Components/Activity.md)
 - [ViewModel 架构组件](Android-Dev/Architecture/ViewModel.md)
-- [Compose 性能优化](Android-Dev/Compose/Compose 重组的性能风险和优化.md)
+- [[Compose 重组的性能风险和优化]]
 - [Handler 机制深度剖析](Android-Dev/Framework/Handler机制.md)
 
 ### [☕ Java 核心技术](Java-Core/)
 Java 语言基础到高级特性的深入理解
 
 **精选内容**：
-- [Java 类加载机制](Java-Core/JVM/Java 类加载器.md)
+- [[Java 类加载器]]
 - [并发集合详解](Java-Core/Collections/HashMap、HashTable、ConcurrentHashMap有什么相同和不同.md)
 - [JUC 并发工具](Java-Core/Concurrency/JUC.md)
 - [设计模式实践](Java-Core/Design-Patterns/)
@@ -66,11 +66,11 @@ Java 语言基础到高级特性的深入理解
 世界顶级课程的学习笔记与实验记录
 
 **重点课程**：
-- **[MIT 6.S081](Courses/MIT-6.S081/MIT 6.s081.md)** - 操作系统工程
-  - [Lab1: Unix 工具](Courses/MIT-6.S081/Lab1 xv6 和 Unix 工具.md)
-  - [Lab2: 系统调用](Courses/MIT-6.S081/Lab2 系统调用.md)
-  - [Lab3: 页表](Courses/MIT-6.S081/Lab3 页表.md)
-  - [Lab4: 中断处理](Courses/MIT-6.S081/Lab4 中断处理 Traps.md)
+- **[[MIT 6.s081]]** - 操作系统工程
+  - [[Lab1 xv6 和 Unix 工具]]
+  - [[Lab2 系统调用]]
+  - [[Lab3 页表]]
+  - [[Lab4 中断处理 Traps]]
 - **[C++ 基础](Courses/CPP-Basics/)** - 现代 C++ 学习
 
 ### [💼 职业发展](Career/)

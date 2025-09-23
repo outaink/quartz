@@ -4,6 +4,24 @@
     "type": "split",
     "children": [
       {
+        "id": "d85c27c09aa75e8f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e0fb3de9dd33e123",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Courses/MIT-6.S081/assets/book-riscv-rev1_1757300923075_0.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "book-riscv-rev1_1757300923075_0"
+            }
+          }
+        ]
+      },
+      {
         "id": "5e770b72e7b1100e",
         "type": "tabs",
         "children": [
@@ -13,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Courses/MIT-6.S081/Lab4 中断处理 Traps.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +46,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Lab4 中断处理 Traps"
+            }
+          },
+          {
+            "id": "824b3e604f33fa34",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Courses/MIT-6.S081/xv6 book 阅读笔记.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "xv6 book 阅读笔记"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -88,7 +131,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "869cb833b3f88451",
@@ -152,13 +196,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS-Notes/Lab4 中断处理 Traps.md",
+                "file": "Courses/MIT-6.S081/xv6 book 阅读笔记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Lab4 中断处理 Traps"
+              "title": "Outline of xv6 book 阅读笔记"
             }
           }
         ],
@@ -180,34 +224,35 @@
       "bases:Create new base": false
     }
   },
-  "active": "a483e7d887532349",
+  "active": "824b3e604f33fa34",
   "lastOpenFiles": [
-    "Courses/CPP-Basics.md",
-    "index.md",
-    "内容重组织方案.md",
-    "index.xml.md",
-    "migration-report.md",
-    "Career/实习经历.md",
-    "System-Fundamentals/index.md",
-    "Courses/MIT-6.S081/时钟中断.md",
-    "Java-Core/Concurrency/JUC.md",
-    "CS-Notes/Java.md",
-    "Courses/index.md",
-    "Data-Structures/index.md",
-    "Network/index.md",
-    "Java-Core/index.md",
-    "Android-Dev/index.md",
-    "Blog/静态连接和动态连接.md",
+    "Courses/MIT-6.S081/assets/book-riscv-rev1_1757300923075_0.pdf",
+    "Courses/MIT-6.S081/xv6 book 阅读笔记.md",
+    "Courses/MIT-6.S081/assets",
     "Blog/计算机网络.md",
-    "Blog/数据结构.md",
-    "Blog/hls__book-riscv-rev1_1757300923075_0.md",
-    "Blog/MIT.md",
+    "Courses/MIT-6.S081/Lab6 写时复制 fork.md",
+    "Courses/MIT-6.S081/MIT 6.s081.md",
+    "Courses/MIT-6.S081/Lab5 xv6 内存页懒分配.md",
+    "Courses/MIT-6.S081/Lab4 中断处理 Traps.md",
+    "Android-Dev/Architecture/MVI.md",
+    "Android-Dev/Architecture/SavedInstance 和 NonConfiguration.md",
+    "Android-Dev/Architecture/LiveData.md",
+    "Android-Dev/Architecture/架构模式.md",
+    "Blog/Java.md",
     "Blog/MIT-6.s081.md",
+    "Blog/MIT.md",
     "Blog/HTTP.md",
+    "Blog/hls__book-riscv-rev1_1757300923075_0.md",
     "Blog/CS基础.md",
     "Blog/CS.md",
-    "Blog/Java.md",
     "Blog/Android.md",
+    "Blog/数据结构.md",
+    "Blog/静态连接和动态连接.md",
+    "index.md",
+    "Android-Dev/Compose/Compose.md",
+    "Courses/CPP-Basics.md",
+    "内容重组织方案.md",
+    "index.xml.md",
     "System-Fundamentals/assets/Pasted image 20250921042643.png",
     "System-Fundamentals/assets/Pasted image 20250918003841.png",
     "System-Fundamentals/assets/Pasted image 20250918003829.png",
@@ -225,8 +270,6 @@
     "Blog",
     "Career",
     "Courses/CPP-Basics",
-    "Courses/MIT-6.S081",
-    "Courses",
-    "Data-Structures/Trees"
+    "Courses/MIT-6.S081"
   ]
 }

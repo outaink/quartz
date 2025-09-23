@@ -7,7 +7,7 @@ rating: 🌟🌟🌟🌟🌟
 ---
 
 **相关资源**
-![book-riscv-rev1.pdf](../assets/book-riscv-rev1_1757300923075_0.pdf)
+![book-riscv-rev1.pdf](assets/book-riscv-rev1_1757300923075_0.pdf)
 ## Chapter 1 工具
   - 进程标识符`Process identifier` aka. `PID`
   - `fork()` 命令会创建子进程，对于父进程，`fork()` 的返回值是子进程的 `PID`。对于子进程返回值为`0`
@@ -241,6 +241,17 @@ copyinstr(pagetable_t pagetable, char *dst, uint64 srcva, uint64 max)
 xv6 处理异常的策略非常简陋
 - 用户态发生异常就 kill process
 - 内核态就进入 panic mode
+
+缺页错误类型：
+1. **加载页面错误**：`load` 指令（如 `li`）访问虚拟地址时找不到对应页面
+2. **存储页面错误**：`store` 指令访问虚拟地址时找不到对应页面
+3. **指令页面错误**：指令对应的虚拟地址找不到（代码段）
+
+和缺页异常有关的寄存器：
+`scause` -> 指示缺页错误类型
+`stval` -> 保存无法转换的虚拟地址
+`trapframe->epc` -> 触发 page fault 指令的地址
+
 真实的操作系统处理方式会更有趣一些，例如：利用缺页异常实现 `copy-on-write` [[写时复制]] `fork`
 
 **思考 xv6 的 fork：** `fork` 通过调用 `uvmcopy` 在物理内存上分配内存并且将父进程的内存复制到这块内存上，如果我们不需要复制，而是复用父进程的内存显然会更高效。但是这样，父子进程的写操作就可能破坏对方进程的内存结构
@@ -249,3 +260,8 @@ xv6 处理异常的策略非常简陋
 - [[从磁盘分页]]
 - [[自增栈空间]]
 - [[内存映射文件]]
+
+# Chapter 7 进程调度
+每个进程都会拥有自己的 **虚拟 CPU** ，实现多路复用
+
+### 7.1 多路复用
