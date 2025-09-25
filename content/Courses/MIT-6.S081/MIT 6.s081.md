@@ -6,4 +6,4 @@
 [[Lab5 xv6 内存页懒分配]]
 [[Lab6 写时复制 fork]]
 ## 操作手册阅读笔记
-[[CS-Notes/xv6 book 阅读笔记]]
+[[Courses/MIT-6.S081/xv6 book 阅读笔记|xv6 book 阅读笔记]]

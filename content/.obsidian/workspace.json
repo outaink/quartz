@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Courses/MIT-6.S081/Lab4 中断处理 Traps.md",
+                "file": "Courses/MIT-6.S081/xv6 book 阅读笔记.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -46,7 +46,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Lab4 中断处理 Traps"
+              "title": "xv6 book 阅读笔记"
             }
           },
           {
@@ -55,7 +55,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Network/HTTP/HTTP版本演变和特点.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -70,11 +70,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "HTTP版本演变和特点"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -223,16 +222,21 @@
       "bases:Create new base": false
     }
   },
-  "active": "824b3e604f33fa34",
+  "active": "a483e7d887532349",
   "lastOpenFiles": [
+    "Courses/MIT-6.S081/Lab4 中断处理 Traps.md",
+    "Network/HTTP/HTTP版本演变和特点.md",
+    "System-Fundamentals/assets/image_1744528938918_0.png",
     "Courses/MIT-6.S081/xv6 book 阅读笔记.md",
+    "Courses/MIT-6.S081/MIT 6.s081.md",
+    "CS-Notes/xv6 book 阅读笔记.md",
+    "CS-Notes",
+    "index.md",
     "Courses/MIT-6.S081/assets/book-riscv-rev1_1757300923075_0.pdf",
     "Courses/MIT-6.S081/assets",
     "Blog/计算机网络.md",
     "Courses/MIT-6.S081/Lab6 写时复制 fork.md",
-    "Courses/MIT-6.S081/MIT 6.s081.md",
     "Courses/MIT-6.S081/Lab5 xv6 内存页懒分配.md",
-    "Courses/MIT-6.S081/Lab4 中断处理 Traps.md",
     "Android-Dev/Architecture/MVI.md",
     "Android-Dev/Architecture/SavedInstance 和 NonConfiguration.md",
     "Android-Dev/Architecture/LiveData.md",
@@ -247,11 +251,8 @@
     "Blog/Android.md",
     "Blog/数据结构.md",
     "Blog/静态连接和动态连接.md",
-    "index.md",
     "Android-Dev/Compose/Compose.md",
     "Courses/CPP-Basics.md",
-    "内容重组织方案.md",
-    "index.xml.md",
     "System-Fundamentals/assets/Pasted image 20250921042643.png",
     "System-Fundamentals/assets/Pasted image 20250918003841.png",
     "System-Fundamentals/assets/Pasted image 20250918003829.png",
@@ -261,14 +262,12 @@
     "System-Fundamentals/assets/image_1757633895210_0.png",
     "System-Fundamentals/assets/image_1757631759133_0.png",
     "System-Fundamentals/assets/image_1757630543860_0.png",
-    "System-Fundamentals/assets/image_1757433069706_0.png",
     "System-Fundamentals/assets/book-riscv-rev1_1757300923075_0.pdf",
     "System-Fundamentals/assets/book-riscv-rev1_1757300923075_0.edn",
     "System-Fundamentals/assets",
     "Android-Dev/assets",
     "Blog",
     "Career",
-    "Courses/CPP-Basics",
-    "Courses/MIT-6.S081"
+    "Courses/CPP-Basics"
   ]
 }

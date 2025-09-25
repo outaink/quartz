@@ -35,10 +35,10 @@ ssh $SERVER "systemctl reload nginx" > /dev/null 2>&1
 
 # 4. 验证
 echo "✅ 验证部署..."
-status=$(curl -s -o /dev/null -w "%{http_code}" http://outaink.com/)
+status=$(curl -s -o /dev/null -w "%{http_code}" https://outaink.com/)
 if [ "$status" = "200" ]; then
     echo -e "${GREEN}✨ 部署成功！${NC}"
-    echo "🌐 访问: http://outaink.com"
+    echo "🌐 访问: https://outaink.com"
 else
     echo -e "${RED}❌ 部署可能失败，HTTP状态码: $status${NC}"
 fi
