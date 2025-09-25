@@ -140,10 +140,10 @@ freerange(void *pa_start, void *pa_end)
 - 用户空间时来了一个设备中断
 
 观察下面内核空间和用户空间的地址分布
-![image.png](CS-Notes/assets/image_1757633895210_0.png)
+![image.png](image_1757633895210_0.png)
 
 它们的分布情况很不同，除了 [[Trampoline]] 页
-![image.png](CS-Notes/assets/image_1757433069706_0.png)
+![image.png](image_1757433069706_0.png)
 这样就可以看出，[[Trampoline]] 页是用户态进入内核态的关键
 `trapframe` 是保存用户态寄存器信息的数据结构
 
@@ -267,4 +267,3 @@ xv6 处理异常的策略非常简陋
 ### 7.1 多路复用
 每个 CPU 从一个进程切换到另一个进程有下面两种情况
 - xv6 的 `sleep` 和 `wakeup` 机制在一个进程等待设备或者 I/O 完成时、等待子进程退出，等待 `sleep` 系统调用结束进行切换
-- 
