@@ -38,10 +38,6 @@ echo "🔍 检查关键文件..."
 test_files=(
     "public/index.html"
     "public/404.html"
-    "public/Android-Notes/Activity.html"
-    "public/Android-Notes/全局监听-Activity-的销毁.html"
-    "public/Android-Notes/Compose-重组的性能风险和优化.html"
-    "public/CS-Notes/MIT-6.s081.html"
 )
 
 all_exist=true

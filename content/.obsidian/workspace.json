@@ -55,7 +55,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Courses/MIT-6.S081/xv6 book 阅读笔记.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -70,7 +70,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "xv6 book 阅读笔记"
+              "title": "index"
             }
           }
         ],
@@ -131,8 +131,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "869cb833b3f88451",
@@ -226,8 +225,8 @@
   },
   "active": "824b3e604f33fa34",
   "lastOpenFiles": [
-    "Courses/MIT-6.S081/assets/book-riscv-rev1_1757300923075_0.pdf",
     "Courses/MIT-6.S081/xv6 book 阅读笔记.md",
+    "Courses/MIT-6.S081/assets/book-riscv-rev1_1757300923075_0.pdf",
     "Courses/MIT-6.S081/assets",
     "Blog/计算机网络.md",
     "Courses/MIT-6.S081/Lab6 写时复制 fork.md",
